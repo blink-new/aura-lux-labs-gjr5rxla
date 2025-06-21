@@ -19,13 +19,13 @@ const LiveBackground = () => {
           position: 'absolute',
           top: '50%',
           left: '50%',
-          width: '200%',
-          height: '200%',
-          backgroundImage: 'url(https://i.imgur.com/eC3mws6.jpeg)',
+          width: '120%',
+          height: '120%',
+          backgroundImage: 'url(/aurora-background.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           transform: 'translate(-50%, -50%)',
-          animation: 'pan 60s linear infinite',
+          animation: 'pan 60s linear infinite alternate',
         }}
       />
       <style>
@@ -34,11 +34,8 @@ const LiveBackground = () => {
             0% {
               transform: translate(-50%, -50%) scale(1);
             }
-            50% {
-              transform: translate(-52%, -48%) scale(1.1);
-            }
             100% {
-              transform: translate(-50%, -50%) scale(1);
+              transform: translate(-55%, -55%) scale(1.1);
             }
           }
         `}
